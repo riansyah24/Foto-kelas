@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Foto kelas</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <header class="bg-red-600 p-4">
+      <h1 class="text-4xl text-white font-bold">Foto Kelas</h1>
+    </header>
+    <section class="flex flex-wrap gap-3 justify-between p-3"></section>
+    <footer class="bg-red-600 p-4 text-white">
+      <h1>Created by Ludwig van Beethoven</h1>
+    </footer>
+    <script>
+      let section = document.querySelector("section");
+      let data = [
+        "Foto/IMG-20231002-WA0007.jpg",
+        "Foto/IMG-20231002-WA0008.jpg",
+        "Foto/IMG-20231002-WA0009.jpg",
+        "Foto/IMG-20231002-WA0010.jpg",
+        "Foto/IMG-20231002-WA0011.jpg",
+        "Foto/IMG-20231002-WA0012.jpg",
+        "Foto/IMG-20231002-WA0013.jpg",
+        "Foto/IMG-20231002-WA0014.jpg",
+        "Foto/IMG-20231002-WA0015.jpg",
+        "Foto/IMG-20231002-WA0016.jpg",
+        "Foto/IMG-20231002-WA0017.jpg",
+        "Foto/IMG-20231002-WA0018.jpg",
+        "Foto/IMG-20231002-WA0019.jpg",
+        "Foto/IMG-20231002-WA0020.jpg",
+        "Foto/IMG-20231002-WA0021.jpg",
+        "Foto/IMG-20231002-WA0022.jpg",
+        "Foto/IMG-20231002-WA0023.jpg",
+        "Foto/IMG-20231002-WA0024.jpg",
+        //"Foto/IMG-20231002-WA0025.jpg",
+        "Foto/IMG-20231002-WA0026.jpg",
+      ];
+      for (let i = 0; i < data.length; i++) {
+        let link = document.createElement("a");
+        let foto = document.createElement("img");
+        foto.src = data[i];
+        link.href = data[i];
+        link.className = "border-2 border-red-600 rounded-lg p-2 lg:w-1/4";
+        foto.className = "rounded-lg";
+        section.appendChild(link);
+        link.appendChild(foto);
+      }
+    </script>
+  </body>
+</html>
+￼Enter
